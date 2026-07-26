@@ -57,20 +57,35 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const skills = [
-    { name: 'Python', icon: '🐍', category: 'language' },
-    { name: 'Java', icon: '☕', category: 'language' },
-    { name: 'JavaScript', icon: '⚡', category: 'frontend' },
-    { name: 'React.js', icon: '⚛️', category: 'frontend' },
-    { name: 'HTML/CSS', icon: '🎨', category: 'frontend' },
-    { name: 'Node.js', icon: '🟢', category: 'backend' },
-    { name: 'SQL', icon: '🗄️', category: 'database' },
-    { name: 'Machine Learning', icon: '🤖', category: 'datascience' },
-    { name: 'Deep Learning', icon: '🧠', category: 'datascience' },
-    { name: 'Power BI', icon: '📊', category: 'datascience' },
-    { name: 'Statistics', icon: '📈', category: 'datascience' },
-    { name: 'Flask', icon: '🌶️', category: 'backend' }
-  ];
+const skills = [
+  // Programming Languages
+  { name: 'Python', icon: '🐍', category: 'language' },
+  { name: 'Java', icon: '☕', category: 'language' },
+  { name: 'JavaScript', icon: '⚡', category: 'language' },
+
+  // Frontend
+  { name: 'React.js', icon: '⚛️', category: 'frontend' },
+  { name: 'HTML5', icon: '🌐', category: 'frontend' },
+  { name: 'CSS3', icon: '🎨', category: 'frontend' },
+
+  // Backend
+  { name: 'Node.js', icon: '🟢', category: 'backend' },
+  { name: 'Flask', icon: '🌶️', category: 'backend' },
+
+  // Database
+  { name: 'SQL', icon: '🗄️', category: 'database' },
+
+  // AI & Data Science
+  { name: 'Machine Learning', icon: '🤖', category: 'datascience' },
+  { name: 'Deep Learning', icon: '🧠', category: 'datascience' },
+  { name: 'LLMs', icon: '💬', category: 'datascience' },
+  { name: 'RAG', icon: '🔍', category: 'datascience' },
+  { name: 'LangChain', icon: '⛓️', category: 'datascience' },
+  { name: 'OCR', icon: '📄', category: 'datascience' },
+  { name: 'Probability', icon: '🎲', category: 'datascience' },
+  { name: 'Statistics', icon: '📈', category: 'datascience' },
+  { name: 'Power BI', icon: '📊', category: 'datascience' }
+];
 
   const projects = [
     {
@@ -129,7 +144,7 @@ function App() {
       company: 'Deffo Tech AI',
       location: 'On-site, India',
       date: 'March 2026 – Present',
-      description: 'Collecting and preparing large-scale datasets for LLM training and knowledge acquisition. Handled data formats like Parquet, performed data preprocessing, cleaning, and transformation. Improved data quality and consistency to support efficient training and accurate AI model performance.',
+      description: 'Developed an enterprise Intelligent Document Processing (IDP) platform by building OCR, document classification, field extraction, table extraction, GST validation, vendor matching, PO matching, and fraud detection modules to automate invoice processing, extract structured JSON, and improve document validation accuracy using Python, PaddleOCR, OpenCV, FastAPI, and Computer Vision.',
       icon: '🤖'
     },
     {
